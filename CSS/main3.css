@@ -1,0 +1,203 @@
+
+* {
+  font-family: 'Roboto'
+}
+
+.jumbotron .container {
+	background: url(../Assets/JoeBackground1.png) no-repeat top center; 
+  	background-size: 100% auto;
+  	padding-top: 190px;
+    padding-bottom: 145px;
+    width:100%;
+    background-size: cover;
+    color:white;
+    position:relative;
+}
+
+.jumbotron{
+  padding-top: 20px !important;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.jumboLogo {
+  max-width:150px;
+  position:absolute;
+  left:25px;
+  bottom:5px;
+}
+
+.navbar {
+  margin:0px !important;
+}
+.center {
+	text-align: center;
+}
+
+#company{
+  font-size: 2rem;
+}
+
+#about {
+  max-width:600px !important;
+  
+  color:black;
+  padding: 20px 0px 20px 0px;
+
+}
+.about-company {
+  max-width: 60%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+#izzy {
+  max-width:190px;
+}
+.img-center {
+  border-radius: 200px;
+}
+.container-fluid {
+  background-color: rgb(244, 244, 244);
+  width:100% !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#morebutton {
+  display:block;
+  margin:0 auto;
+  max-width: 30%;
+  text-align: center;
+  
+}
+
+#email {
+  max-width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+
+.writeup { 
+  margin: 0 auto;
+  text-align: left;
+  width:600px;
+  font-size: "Roboto", sans-serif;
+
+}
+
+
+
+.center h2 {
+	font-size: 200%;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    padding-top: 40px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+.signupfullwidth {
+  text-align: center;
+  background-color: rgb(236, 235, 233);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.signupfullwidth button {
+  background-color: orange;
+  color: white;
+
+}
+
+/* MAP */
+#map {
+    width: 100%; height: 400px; margin-top: 40px; margin-bottom: 40px;
+}
+
+.info-window {
+    font-family: 'Montserrat', sans-serif;
+}
+.info-content {
+    color: #999;
+}
+
+
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+  }
+
+#trainercontact {
+  padding-top: 15px;
+}
+
+.footer  {
+  font-size: 24px;
+}

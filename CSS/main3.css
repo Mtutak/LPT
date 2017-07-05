@@ -33,12 +33,18 @@
 .center {
 	text-align: center;
 }
+a.anchor {
+    display: block;
+    position: relative;
+    top: -52px;
+    visibility: hidden;
+}
 
 #company{
   font-size: 2rem;
 }
 
-#about {
+#aboutsection {
   max-width:600px !important;
   
   color:black;
@@ -49,6 +55,12 @@
   max-width: 60%;
   margin: 0 auto;
   padding-bottom: 10px;
+}
+
+.downarrow {
+  display:block;
+  max-width:25px;
+  margin: 0 auto;
 }
 #izzy {
   max-width:190px;
@@ -72,10 +84,9 @@
 }
 
 #email {
-  max-width: 50%;
+  max-width: 40%;
   text-align: center;
   margin: 0 auto;
-  background-color: lightblue;
 }
 
 .writeup { 
@@ -94,6 +105,10 @@
 
 }
 
+.moreinfo {
+  text-align: left;
+}
+
 body {
     padding-top: 40px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
@@ -110,9 +125,19 @@ body {
 }
 
 .signupfullwidth button {
+  padding: 5px 5px;
   background-color: orange;
   color: white;
 
+}
+
+.signupfullwidth button a {
+  text-decoration:none;
+  color:white;
+}
+
+.signupfullwidth p {
+  padding-top: 15px;
 }
 
 /* MAP */
@@ -187,12 +212,12 @@ body {
     margin-bottom: 10px;
 }
 
-.item blockquote p:before {
+/*.item blockquote p:before {
     content: "\f10d";
     font-family: 'Fontawesome';
     float: left;
     margin-right: 10px;
-  }
+  }*/
 
 #trainercontact {
   padding-top: 15px;

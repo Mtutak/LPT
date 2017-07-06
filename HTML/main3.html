@@ -6,30 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lifestyle Personal Training</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS File-->
     <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CDN Link CSS-->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+    <!-- LPT's CSS File-->
     <link href="../CSS/main3.css" rel="stylesheet">
-
+    <!-- LPT Favicon to Browser Tab-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
-  <body>
-<!-- Hey Matt, this is what I get when someone sends me a message through the website or an email to be added to our list (see below).
+<body>
 
-I am working on getting some pictures and asking the guys if they want to change headshots or bio's.  
-
-For the three best testimonials I would like to use Heidi's, Lenal's and Stacy's.  From: allForms <noreply@server.mailjol.net>
-
-
-*******************************************************
-Results of form submission.
-*******************************************************
-
-
-The submitted value of field named "Email:" is:
-
-Lifestyleptllc@aol.com
--->
-
+<!-- Navigation Bar -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-expanded" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -59,18 +47,19 @@ Lifestyleptllc@aol.com
               <a href="#contact">Contact</a>
             </li>
           </ul>
-           <form class="navbar-form navbar-right">
+           <form class="navbar-form navbar-right" action="https://formspree.io/lifestyleptllc@aol.com"
+          method="POST">
             <div class="form-group">
-              <input type="email" placeholder="Email" class="form-control">
+              <input type="email" name="_replyto" placeholder="Your email" class="form-control">
             </div>
-            <button type="submit" class="btn btn-success">Sign Up For More Info
+            <button type="submit" value="Send" class="btn btn-success">Sign Up For More Info
             </button>
           </form>
       </div><!--/.navbar-collapse -->
   </div><!--/.container -->
 </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+<!-- Main jumbotron Header Section for call to action and full width image-->
     <div class="jumbotron">
       <div class="container">
         <img class="jumboLogo" src="../Assets/LPT1.png" alt="LPT" >
@@ -78,40 +67,47 @@ Lifestyleptllc@aol.com
         <p class="center">Don't want to join a gym? </br> Welcome to <br/><span id="company"><em><strong>Lifestyle Personal Training</strong></em><span>
         </br> The most affordable personal training professionals in the Chicagoland area.
         </p>
-        <!--Hiding Button to Jumpt to about 
+        <!--Hiding Button to Jump to about 
         <button id="morebutton" class="center btn btn-primary btn-lg" href="#about" role="button">Learn more <img class="downarrow" src="../Assets/images/arrow.png"/></button>
-
         -->
       </div>
     </div>
 
-    <div class="container-fluid">
-<a class="anchor" id="about"></a>
-<div id="aboutsection" class="container-fluid">
-    
-      <h2 class="center">Train Better</h2>
-    <div class="center moreinfo col-sm-10 offset-sm-1 col-md-12">
-      <p>Our focus is on overall health, so no matter what your goals, we will help you achieve them.  This overall approach to health and fitness will begin to develop your body immediately.
-      <br>With our help, you will begin feeling energized after just one visit and will notice visible results within just a few short weeks. </br>
-      <br>Let us help you reach the physical and mental potential that you only dreamed of.   At Lifestyle Personal Training, anything is possible. </br>
-      <br>Contact us today to meet with your own personal trainer and begin to plan the road to a healthier, happier you!
-    </div>
-    
-</div>
-<div id="email" class="container-fluid">
-   <form>
-            <div class="form-group input-group">
-                <input type="email" placeholder="Email" class="form-control">
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-success">Sign Up For More Info
-                </button>
-              </span>
-            </div>
-    </form>
-</div>
-<!-- <div id="socialmediabanner">
-  <h1>Social Media Stuff</h1>
-  <h2> Sign Up Form</h2>
+<!--  End Jumbotron   -->
+
+<!--ABOUT SECTION -->
+<div class="container-fluid">
+  <!--Anchor for Navbar link, style to account for fixed header-->
+  <a class="anchor" id="about"></a>
+    <div id="aboutsection" class="container-fluid">
+          <h2 class="center">Train Better</h2>
+        <div class="center moreinfo col-sm-10 offset-sm-1 col-md-12">
+          <p>Our focus is on overall health, so no matter what your goals, we will help you achieve them. This overall approach to health and fitness will begin to develop your body immediately.
+          <br>With our help, you will begin feeling energized after just one visit and will notice visible results within just a few short weeks. </br>
+          <br>Let us help you reach the physical and mental potential that you only dreamed of. At Lifestyle Personal Training, anything is possible. </br>
+          <br>Contact us today to meet with your own personal trainer and begin to plan the road to a healthier, happier you!</p>
+        </div>
+  </div>
+
+  <!--EMAIL FORM-->
+
+      <div id="email" class="container-fluid">
+          <form action="https://formspree.io/lifestyleptllc@aol.com"
+          method="POST">
+                  <div class="form-group input-group">
+                      <input type="email" name="_replyto" placeholder="Your email" class="form-control">
+                    <span class="input-group-btn">
+                      <button type="submit"  value="Send" class="btn btn-success">Sign Up For More Info
+                      </button>
+                    </span>
+                  </div>
+          </form>
+      </div>
+<!-- 
+  This section could include auto-updating testimonials, statistics and social media buzz
+
+<div id="socialmediabanner">
+  <h1>Client's talking about us!</h1>
 </div>
 
 <div id="autoupdates"> 
@@ -124,105 +120,93 @@ Lifestyleptllc@aol.com
 </div>  -->
 
 
- <!-- Page Content -->
+ <!-- Team and About Section -->
+ <!--Anchor for Navbar link, style to account for fixed header-->
  <a class="anchor" id="team"></a>
     <div class="container" id="teamsection">
 
-        <!-- Team Members Row -->
+        <!-- About Intro Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">About Us</h1> 
+              <h1 class="page-header">About Us</h1> 
             </div>
             <div class="about-company">
-              <p>Lifestyle Personal Training was started in 2002 not only as a fitness organization but also as a way to help clients find better overall health through exercise, nutrition, and positive thinking.  Our Personal and small group training can be geared towards beginners, guide clients reach specific goals or help an athlete achieve the next level of fitness for their particular sport.  We offer in home training for your convenience where we provide all the necessary equipment to accomplish your goal without the need for an expensive gym membership.  Not interested in training at home?  Come visit us at our studio for all your training needs! </p>
+              <p>Lifestyle Personal Training was started in 2002 not only as a fitness organization but also as a way to help clients find better overall health through exercise, nutrition, and positive thinking.  Our Personal and small group training can be geared towards beginners, guide clients reach specific goals or help an athlete achieve the next level of fitness for their particular sport.  We offer in home training for your convenience where we provide all the necessary equipment to accomplish your goal without the need for an expensive gym membership.  Not interested in training at home?  Come visit us at our studio for all your training needs!</p>
             </div>
-             <div class="col-lg-12">
+
+            <!--Team Section-->
+            <div class="col-lg-12">
                 <h1 class="text-center">Our Team</h1> 
             </div>
-            <div class="row">
-                        <div class="col-lg-6 col-sm-6 text-left clearfix">
-                            <img class="img-responsive img-center" src="../Assets/images/Joesquare.jpg" alt="">
-                            <h3 class="text-center">Joe Alagno</h3>
-                            <p>I am the owner and operator of Lifestyle Personal Training.  I have a Bachelors degree in Exercise Science and am an ACE certified personal trainer. Since LPT was established in 2002, I have had great success in helping individuals of all ages obtain their health and fitness goals.   
-
-            Client Experience:
-
-            Muscle Building and Toning
-            Weight Loss
-            Martial Arts/Self Defense
-            Club Sport Training
-            Pre/Post Pregnancy Weight Maintenance
-            Diabetes Control and Maintenance
-            Special Populations
-            
-
-            Overall health is my main focus so you will not only achieve your fitness goals but enjoy a healthier, happier life. I look forward to helping you overcome any health hurdles you may have and guide you down the path to the best shape of your life.
-
-            </p>
-                        </div>
+        <div class="row">
+           <!--Trainer: Joe Alagno-->
             <div class="col-lg-6 col-sm-6 text-left clearfix">
-                <img class="img-circle img-responsive img-center" src="../Assets/images/Justinsquare.jpg" alt="">
-                <h3 class="text-center">Justin Malec
-                    
-                </h3>
-                <p>WAs an ACE certified personal trainer I have fit the needs of my clients such as athletic performance, weight loss, muscle toning and health related issues.
-
-As a division I collegiate sprinter I gained valuable experience in training for speed, strength and flexibility. My other coaching experiences have included being a head coach for a youth football team and training elite track sprinters. Currently, I am a varsity football and track coach at Sandburg High School.
-
-The part of training that excites me is the variety of clients that I have been able to work with and help succeed in reaching their goals.
-
-</p>
+                  <img class="img-responsive img-center" src="../Assets/images/Joesquare.jpg" alt="Joe Alagno">
+                  <h3 class="text-center">Joe Alagno</h3>
+                  <p>I am the owner and operator of Lifestyle Personal Training.  I have a Bachelors degree in Exercise Science and am an ACE certified personal trainer. Since LPT was established in 2002, I have had great success in helping individuals of all ages obtain their health and fitness goals. My Client Experience includes: 
+                  Muscle Building and Toning
+                  Weight Loss
+                  Martial Arts/Self Defense
+                  Club Sport Training
+                  Pre/Post Pregnancy Weight Maintenance
+                  Diabetes Control and Maintenance
+                  Special Populations
+                  </br>
+                  Overall health is my main focus so you will not only achieve your fitness goals but enjoy a healthier, happier life. I look forward to helping you overcome any health hurdles you may have and guide you down the path to the best shape of your life.
+                  </p>
             </div>
             <div class="clearfix visible-lg-block visible-md-block"></div>
-            <div class="col-lg-4 col-sm-4 text-left clearfix">
-                <img class="img-circle img-responsive img-center" src="../Assets/images/sarahsquare.jpg" alt="">
-                <h3 class="text-center">Sarah
-                </h3>
-                <p>Hi, my name is Sarah! I am a NASM Certified Personal Trainer who promotes body
-confidence and views fitness as a journey. My main goals are to both motivate you
-and give you the tools you need to reach and surpass your fitness goals.
-Previously a collegiate pitcher, I am well versed in goal setting and instilling mental
-toughness into whoever I coach/train. I remain involved in softball as an instructor
-for pitching, hitting, and fielding where I implement my knowledge as a Personal
-Trainer into my lessons.
-</p>
+
+            <!--Trainer Justin Malec-->
+            <div class="col-lg-6 col-sm-6 text-left clearfix">
+                <img class="img-circle img-responsive img-center" src="../Assets/images/Justinsquare.jpg" alt="Justin Malec">
+                <h3 class="text-center">Justin Malec</h3>
+                <p>I am an ACE certified personal trainer. I work to fit the needs of my clients through athletic performance, weight loss, muscle toning and health related issues. </br> As a division I collegiate sprinter I gained valuable experience in training for speed, strength and flexibility. My other coaching experiences include being a head coach for a youth football team and training elite track sprinters. Currently, I am a varsity football and track coach at Sandburg High School. The part of training that excites me is the variety of clients that I have been able to work with and help them succeed in reaching their goals.
+                </p>
             </div>
+            <div class="clearfix visible-lg-block visible-md-block"></div>
+
+            <!-- Trainer Sarah -->
             <div class="col-lg-4 col-sm-4 text-left clearfix">
-                <img class="img-circle img-responsive img-center" src="../Assets/images/Dansquare.jpg" alt="">
-                <h3 class="text-center">Dan Atkenson
-                    
-                </h3>
-                <p>WDan a native of Crestwood, IL and a graduate of Carl Sandburg High School where he played baseball and basketball. He was a pitcher on the baseball team and was selected as MVP in IHSA State Championship in 2002. After high school, Dan attended Northern Illinois University where he received a degree in Preventive and Rehabilitative Exercise Science. During his time there, Dan also was a pitcher on the baseball team.
-
-Dan got many awards on and off the field including Huskie Scholar 4 years in a row and was an NSCA All American voted by staff from Northern as "the first to arrive and last to leave in the weight room".
-
-Dan has a passion to help people reach their fitness goals and is passionate and dedicated to helping you TODAY!
-
-</p>
+                <img class="img-circle img-responsive img-center" src="../Assets/images/sarahsquare.jpg" alt="Sarah">
+                <h3 class="text-center">Sarah</h3>
+                <p>Hi! I am a NASM Certified Personal Trainer who promotes body confidence and views fitness as a journey. My main goals are to both motivate you and give you the tools you need to reach and surpass your fitness goals. Previously a collegiate pitcher, I am well versed in goal setting and instilling mental toughness into whoever I coach and train. I remain involved in softball as an instructor for pitching, hitting, and fielding where I implement my knowledge as a Personal Trainer into my lessons.
+                </p>
             </div>
+
+            <!-- Trainer Dan Atkenson -->
             <div class="col-lg-4 col-sm-4 text-left clearfix">
-                <img id="izzy" class="img-circle img-responsive img-center" src="../Assets/images/izzysquare.jpg" alt="">
+                <img class="img-circle img-responsive img-center" src="../Assets/images/Dansquare.jpg" alt="Dan Atkenson">
+                <h3 class="text-center">Dan Atkenson</h3>
+                <p>Dan is a native of Crestwood, IL and a graduate of Carl Sandburg High School where he played baseball and basketball. He was a pitcher on the baseball team and was selected as MVP in IHSA State Championship in 2002. After high school, Dan attended Northern Illinois University where he received a degree in Preventive and Rehabilitative Exercise Science. During his time there, Dan also was a pitcher on the baseball team. Dan got many awards on and off the field including Huskie Scholar 4 years in a row and was an NSCA All American voted by staff from Northern as "the first to arrive and last to leave in the weight room". </br> Dan has a passion to help people reach their fitness goals and is passionate and dedicated to helping you TODAY!
+                </p>
+            </div>
+
+            <!-- Trainer Izzy -->
+            <div class="col-lg-4 col-sm-4 text-left clearfix">
+                <img id="izzy" class="img-circle img-responsive img-center" src="../Assets/images/izzysquare.jpg" alt="Izzy">
                 <h3 class="text-center">Coach Izzy
-                    
                 </h3>
-                <p>Coach Izzy is a Certified Personal Trainer through The National Academy of Sports Medicine. She also had her Corrective Exercise Specialization which allows her to work with individuals with past injuries and can help individuals after physical therapy. Coach Izzy also had her Bachelor of Arts is Psychology and Sociology which give her a unique perspective into health and wellness. Izzy has lost over 130 pounds and understands the struggle better than others. </p>
+                <p>Coach Izzy is a Certified Personal Trainer through The National Academy of Sports Medicine. She also had her Corrective Exercise Specialization which allows her to work with individuals with past injuries and can help individuals after physical therapy. Coach Izzy also had her Bachelor of Arts is Psychology and Sociology which give her a unique perspective into health and wellness. Izzy has lost over 130 pounds and understands the struggle better than others.</p>
             </div>
         </div>
 </div>
+
 </div>
         <hr>
 
+ <!-- Contact A Personal Trainer -->
+
+
 <div class="container-fluid signupfullwidth">
 	<h1>Ready to get started?</h1>
-	<button><a href="#contact">Get A Personal Trainer</a></button>
-  
+	<button class="btn btn-success"><a href="#contact">Get A Personal Trainer</a></button>
   <p> Contact us today to meet with your own personal trainer and begin to plan the road to a healthier, happier you!</p>
 </div>
 
 
    
 
-  <!--Training Section-->
   <!--Training Section
   <div id="training">
     <div class="container">
@@ -250,7 +234,7 @@ Contact us for affordable pricing!
 
 -->
 
-<!--Contact Us-->
+<!-- TESTIMONIALS -->
 <a class="anchor" id="testimonials"></a>
 <div id="testimonialssection">
   <div class="container">
@@ -281,11 +265,7 @@ Contact us for affordable pricing!
                   <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
                 </div>
                 <div class="col-sm-9">
-                  <p>I have one word to describe personal training with Lifestyle Personal Training…Phenomenal!!!  I was probably the biggest skeptic around about exercise & the benefits of exercise & proper nutrition before I started working out with LPT. 
-
-  Summer hit, and I decided I was sick of eating bad, and, quite frankly, looking completely out of shape.  LPT trainers are excellent motivators.  I was hitting a Size 8 or 10 prior to training with them.  In just two and a half months I have dropped down to a Size 2. 
-
-  I have never felt better BOTH physically & mentally since I started training with LPT.  I’m no longer sluggish, my focus/concentration at work is now phenomenal, and I look great!  Also, I now actually look forward to working out!!!  Additionally, an added bonus is that LPT is really knowledgeable about exercise & nutrition…They definitely know their stuff!!!  Take it from a true exercise skeptic…LPT has converted me into an exercise worshipper!!!  I highly, highly recommend Lifestyle Personal Training!!!</p>
+                  <p>I have one word to describe personal training with Lifestyle Personal Training…Phenomenal!!!  I was probably the biggest skeptic around about exercise & the benefits of exercise & proper nutrition before I started working out with LPT. </br> Summer hit, and I decided I was sick of eating bad, and, quite frankly, looking completely out of shape.  LPT trainers are excellent motivators.  I was hitting a Size 8 or 10 prior to training with them.  In just two and a half months I have dropped down to a Size 2. </br>I have never felt better BOTH physically and mentally since I started training with LPT.  I’m no longer sluggish, my focus/concentration at work is now phenomenal, and I look great!  Also, I now actually look forward to working out!!!  Additionally, an added bonus is that LPT is really knowledgeable about exercise & nutrition…They definitely know their stuff!!!  Take it from a true exercise skeptic…LPT has converted me into an exercise worshipper!!!  I highly, highly recommend Lifestyle Personal Training!!!</p>
                   <small>Heidi S., Age 37</small>
                 </div>
               </div>
@@ -299,9 +279,7 @@ Contact us for affordable pricing!
                   <img class="rounded" src="../Assets/images/beforeandafter.jpg" style="width: 100px;height:100px;">
                 </div>
                 <div class="col-sm-9">
-                  <p>I started Lifestyle Personal Training's "Biggest Loser Competition" because I needed my body and life to change.  I set a course to get back to the basics of weight loss, more exercise, better nutrition, and fewer empty calories  
-
-  Lifestyle Personal Training helped me with a positive attitude.  The first month was hard physically, the second was hard mentally, but the third was the easiest because I started seeing changes in my body, started feeling better, and had more energy!  LPT made exercising fun!</p>
+                  <p>I started Lifestyle Personal Training's "Biggest Loser Competition" because I needed my body and life to change.  I set a course to get back to the basics of weight loss, more exercise, better nutrition, and fewer empty calories Lifestyle Personal Training helped me with a positive attitude.  The first month was hard physically, the second was hard mentally, but the third was the easiest because I started seeing changes in my body, started feeling better, and had more energy!  LPT made exercising fun!</p>
                   <small>Rasa</small>
                 </div>
               </div>
@@ -315,13 +293,7 @@ Contact us for affordable pricing!
                   <img class="rounded" src="../Assets/images/beforeandafter.jpg" style="width: 100px;height:100px;">
                 </div>
                 <div class="col-sm-9">
-                  <p>Lifestyle Personal Training has changed my life. I'm diabetic, have high blood pressure and high cholesterol. From working out with LPT, I have cut my blood pressure medication in half, I have cut my blood sugar medication from 1,000mg a day to 250mg and have eliminated one of the two medications I take for cholesterol.
-
-When walking into work from my car, I would have to walk so slow because I would run out of breath. Now I walk 2 miles everyday on my lunch break. I have also participated in a 4 mile walk for charity.
-
- LPT is not only there for the exercise, but also they're there for emotional support and guidance. Their commitment to me brings out the fight and commitment within myself.
-
-I've struggled all my life with my weight. Dieting on and off, and maybe exercising. Not really understanding what a difference a proper workout can make. It does make a difference.... I believe it saved my life.</p>
+                  <p>Lifestyle Personal Training has changed my life. I'm diabetic, have high blood pressure and high cholesterol. From working out with LPT, I have cut my blood pressure medication in half, I have cut my blood sugar medication from 1,000mg a day to 250mg and have eliminated one of the two medications I take for cholesterol.</br>When walking into work from my car, I would have to walk so slow because I would run out of breath. Now I walk 2 miles everyday on my lunch break. I have also participated in a 4 mile walk for charity.</br>LPT is not only there for the exercise, but also they're there for emotional support and guidance. Their commitment to me brings out the fight and commitment within myself.</br>I've struggled all my life with my weight. Dieting on and off, and maybe exercising. Not really understanding what a difference a proper workout can make. It does make a difference.... I believe it saved my life.</p>
                   <small>Lenal B.</small>
                 </div>
               </div>
@@ -373,29 +345,29 @@ I have never felt this healthy in my whole life. I can finally say I really love
 
 </div> -->
 
+
+<!-- CONTACT FORM -->
+
 <div class="container" id="contact">
 
-    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
-<fieldset>
+  <form class="well form-horizontal" action=" " method="post"  id="contact_form">
 
-<!--add API for Google Maps-->
+      <!--add API for Google Maps-->
 
-<!-- Form Name -->
-
-<div id="map" style="max-width: 500px;max-height:500px;margin:0 auto;"> </div>
-<!-- Text input-->
-
-<div id="trainercontact" class="form-group">
-  <label class="col-md-4 control-label">First Name</label>  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+      <div id="map" style="max-width: 500px;max-height:500px;margin:0 auto;"> </div>
+      <!-- Form Text Input Start-->
+    <fieldset>
+    <div id="trainercontact" class="form-group">
+      <label class="col-md-4 control-label">First Name</label>  
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- Text input-->
+<!-- Text Input Last Name-->
 
 <div class="form-group">
   <label class="col-md-4 control-label" >Last Name</label> 
@@ -458,9 +430,12 @@ I have never felt this healthy in my whole life. I can finally say I really love
 </fieldset>
 </form>
 </div>
-    </div><!-- /.container -->
+</div><!-- /.container -->
 
       <hr>
+
+<!--FOOTER OF PAGE -->
+
    <footer class="footer" style="background-image: url('assets/img/fashion/bg-footer.jpg')">
         <div class="container text-center">
             <div class="row">
@@ -498,7 +473,7 @@ I have never felt this healthy in my whole life. I can finally say I really love
             </div>
         </div>
     </footer>
-    </div> <!-- /container -->
+</div> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -569,5 +544,5 @@ $(function () {
 
 </script>
 
-  </body>
+</body>
 </html>

@@ -57,6 +57,11 @@ a.anchor {
   padding-bottom: 10px;
 }
 
+.trainer {
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
 .downarrow {
   display:block;
   max-width:25px;

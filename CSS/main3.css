@@ -226,15 +226,15 @@ body {
 
 /* ACCORDIAN TESTIMONIALS STYLING */
 /* Styling the button */
-.testsec { 
+/*.testsec { 
   width: 32%;
-}
+}*/
 
 .testpic {
   max-width: 200px;
 }
 button.accordion {
-    min-width: 350px;
+    width:100%;
     height: 363px;
     background-color: #eee;
     color: #444;
@@ -253,7 +253,7 @@ button.accordion.active, button.accordion:hover {
 
 /* Style the accordion panel. Note: hidden by default */
 div.panel {
-    min-width: 350px;
+    width: 100%;
     padding: 0 18px;
     background-color: white;
     overflow: hidden;
@@ -267,4 +267,8 @@ div.panel {
 
 .footer  {
   font-size: 24px;
+}
+
+p {
+  margin: 0px 15px 0px 15px;
 }

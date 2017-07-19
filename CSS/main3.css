@@ -4,9 +4,12 @@
 }
 
 .jumbotron .container {
-	background: url(../Assets/JoeBackground1.png) no-repeat top center; 
-  	background-size: 100% auto;
-  	padding-top: 190px;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.40) 60%, rgba(0, 0, 0, 0.50) 100%), url(../Assets/JoeBackground1.png) no-repeat top center;
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.40) 60%, rgba(0, 0, 0, 0.50) 100%), url(../Assets/JoeBackground1.png) no-repeat top center;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.40) 60%, rgba(0, 0, 0, 0.50) 100%), url(../Assets/JoeBackground1.png) no-repeat top center;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.40) 60%, rgba(0, 0, 0, 0.50) 100%), url(../Assets/JoeBackground1.png) no-repeat top center; 
+    background-size: 100% auto;
+    padding-top: 190px;
     padding-bottom: 145px;
     width:100%;
     background-size: cover;
@@ -23,8 +26,16 @@
 .jumboLogo {
   max-width:150px;
   position:absolute;
-  left:25px;
-  bottom:5px;
+  left:75px;
+  bottom:10px;
+}
+
+.shadowCSS { 
+  box-shadow: 12px 12px 7px rgba(0,0,0,0.5); 
+}
+.shadowfilter { 
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+  filter: url(shadow.svg#drop-shadow); 
 }
 
 .navbar {
@@ -246,11 +257,20 @@ button.accordion {
     transition: 0.4s;
 }
 
+.down-arrow {
+  padding-left: 3px;
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
 
+.read-more {
+  padding: 5px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-top: 7px;
+}
 /* Style the accordion panel. Note: hidden by default */
 div.panel {
     width: 100%;
